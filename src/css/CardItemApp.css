@@ -1,20 +1,26 @@
+.wrapper-card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .item-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 355px;
+    min-width: auto;
+    max-width: 355px;
     background-color: white;
     padding: 40px;
     border-radius: 35px;
-    margin-right: 10px;
     border: 55px #000000;
 }
 
 .item-img-app {
-    width: 350px;
-    height: 170px;
+    max-width: 100% !important;
+    height: auto;
     border: 2px solid rgb(209, 209, 209);
-    margin-bottom: 6px;
+    margin-bottom: 3px;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .item-category {
@@ -66,4 +72,65 @@
     margin-left: 80px;
     color: white;
     font-weight: 1000;
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper-card {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .item-card {
+        max-width: 270px;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+
+    .item-button-download {
+        margin-left: 43px;
+    }
+
+    .item-button-download-pressed {
+        margin-left: 43px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper-card {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .item-card {
+        max-width: 200px;
+    }
+
+    .item-category {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .item-desc {
+        font-weight: 300px;
+        font-size: 13px;
+    }
+
+    .item-name {
+        font-size: 14px;
+    }
+
+    .item-button-download {
+        margin-left: 20px;
+        width: 150px;
+    }
+
+    .item-button-download-pressed {
+        margin-left: 20px;
+        width: 150px;
+    }
 }

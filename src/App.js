@@ -9,7 +9,7 @@ function App() {
       <div>
         <h1 className='neonText'>Try Our Apps!</h1>
       </div>
-      <Carousel timeToNext = {5000}>
+      <Carousel timeToNext = {3000}>
       <CarouselItem>
           <CardItemApp 
             imgSrc='https://play-lh.googleusercontent.com/TBTgjChelQqTpl4kHr3jPwpso0MZ3SRGJ2S4kv9EMN1_Am_lwakC_0fEnPNj1H37yORW=w526-h296'
@@ -42,7 +42,7 @@ function App() {
           <h1 className='neonText'>Contact</h1>
         </div>
 
-        <div style={{ justifyContent: 'center', alignItems: 'center', width: '100vw', height: '70vh'}}>
+        <div className='card-wrapper'>
         <CardProfile />
         </div>
     </div>

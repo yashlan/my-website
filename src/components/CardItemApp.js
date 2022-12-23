@@ -14,17 +14,6 @@ const CardItemApp = ({ imgSrc, category, name, description, downloadUrl })=> {
          }, 100);
     };
     
-    const wrapper = {  
-        backgroundColor : null, 
-        width : '100vw',
-        height: '100vh',
-        backgroundImage : `url(${bg})`,
-        backgroundPostion: 'bottom right',
-        backgroundRepeat: 'no-repeat',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
     return(
         <div>
             <div className='item-card'>
